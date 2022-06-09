@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pedidos</title>
+    <link rel="icon" href="../img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav__logo">
+                <picture >
+                    <a title="logo" href="../index.html"><img class="nav__img" src="../img/logo.png" alt="logo de restaurante Marisol"></a>
+                </picture>
+                <h1>Marisol</h1>
+            </div>
+            <ul class="menu">
+                <li class="menu__item"><a href="../index.html" class="menu__link">Inicio</a></li>
+                <li class="menu__item menu__item--active"><a href="./pedidos.html" class="menu__link">Pedidos</a></li>
+                <li class="menu__item"><a href="./nosotros.html" class="menu__link">Nosotros</a></li>
+                <li class="menu__item"><a href="./noticias.html" class="menu__link">Noticias</a></li>
+                <li class="menu__item"><a href="./contacto.html" class="menu__link">Contacto</a></li>
+            </ul>
+            <div class="barra">
+                <img src="../img/barra.png" alt="">
+            </div>
+            </div>           
+        </nav>
+    </header>
+    <main>    
+        <section id="formulario-pedidos">
+            <h2>Pedido</h2>  
+            <form action="" method="get" class="pedidos">
+                <section class="pedidos__entrada" >
+                    <h3>Entrada</h3>
+                    <div>
+                        <input type="radio" id="ensalada" name="entrada" value="ensalada" class="pedidos__input">
+                        <label for="ensalada">Ensalada </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="fruta" name="entrada" value="fruta">
+                        <label for="fruta">Fruta </label>
+                    </div>
+                </section>
+                <section class="pedidos__sopas">
+                    <h3>Sopas</h3>
+                    <div>
+                        <input type="radio" id="ajiaco" name="sopa" value="ajiaco">
+                        <label for="ajiaco">Ajiaco </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="casuela" name="sopa" value="casuela">
+                        <label for="casuela">Casuela </label>
+                    </div>
+                </section>
+                <section class="pedidos__proteina">
+                    <h3>Proteina</h3>
+                    <div>
+                        <input type="radio" id="pescado" name="proteina" value="pescado">
+                        <label for="pescado">Pescado </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="ave" name="proteina" value="ave">
+                        <label for="ave">Ave </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="vacuno" name="proteina" value="vacuno">
+                        <label for="vacuno">Vacuno </label>
+                    </div>
+                </section>
+                <section class="pedidos__acom">
+                    <h3>acompañamiento</h3>
+                    <div>
+                        <input type="checkbox" id="arroz" name="acompañamiento" value="arroz">
+                        <label for="arroz">Arroz </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="papa" name="acompañamiento" value="papa">
+                        <label for="papa">Papa frita </label>
+                    </div>
+                </section>   
+                <section class="pedidos__com">
+                    <h3>Comentarios</h3>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+                </section> 
+                <section class="pedidos__dat-ent">
+                    <h3>Datos de entrega</h3>
+                    <div>
+                        <label class="pedidos__lab" for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Juan">
+                    </div>
+                    <div>
+                        <label class="pedidos__lab" for="email">Correo:</label>
+                        <input type="email" id="email" name="email" placeholder="juan@correo.com">
+                    </div>
+                    <div>
+                        <label class="pedidos__lab" for="cel">Celular:</label>
+                        <input type="tel" id="cel" name="cel" placeholder="9649876432">
+                    </div>
+                    <div>
+                        <label class="pedidos__lab" for="dir">Direccion:</label>
+                        <input type="text" id="dir" name="dir" placeholder="AV.Circunvalación 933">
+                    </div>
+                </section>   
+                <div class="pedidos__submit">
+                    <input type="submit" id="btn_submit" value="enviar">
+                </div>
+            </form>               
+        </section>
+    </main>
+    <footer>
+        <section><!--redes sociales--> 
+            <h4>síguenos en: </h4> 
+            <div class="redes">
+                <a class="redes__insta" title="instagram" href="https://instagram.com" target="_BLANK"><img src="../img/insta.png" alt="instagram"></a>
+                <a class="redes__face" title="facebook" href="https://facebook.com" target="_BLANK"><img src="../img/face.png" alt="facebook"></a>
+            </div>
+            
+        </section>
+        <section class="copy">
+            <h4 class="copy__texto">Marisol © 2022. Todos los derechos reservados</h4>
+        </section>
+    </footer>
+</body>
+</html>
