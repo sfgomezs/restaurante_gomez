@@ -78,6 +78,11 @@ header nav .nav__img{
     width: 7rem;
     border-radius: 3px;
     text-align: center;
+    transition: transform .5s;
+}
+
+.menu .menu__item:hover{
+    transform: scale(1.1);
 }
 
 .menu .menu__link{
@@ -216,6 +221,15 @@ main .galery__title{
     font-size: 2.5rem;
     padding-top: 2rem;
     text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.pedidos .pedidos__cal{
+    grid-column: 1/4;
+    grid-row: 1/3;
 }
 
 .pedidos .pedidos__entrada{
@@ -255,6 +269,14 @@ main .galery__title{
 
 .pedidos__lab{
     display: block;
+}
+
+.pedidos__cal svg #humo_2{
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: translateY(10px);
 }
 
 /* NOTICIAS */
@@ -347,19 +369,14 @@ footer{
     justify-content: center;
 }
 
-.redes .redes__insta{
+.redes .redes__item{
     max-width: 3rem;
+    transition: transform .5s;
 }
 
-.redes .redes__face{
-    max-width: 3rem;
+.redes .redes__item:hover{
+    transform: scale(1.2);
 }
-/* .copy{
-    padding: 0px;
-    text-align: center;
-    margin: 5px 50px;
-}
- */
 
 
 
@@ -469,4 +486,23 @@ footer{
         justify-items: center;
         gap: 2rem;
     }
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0rem);
+    } 
+    25%{
+        transform: translateY(-.7rem);
+    }
+    50%{
+        transform: translateY(0rem);
+    }
+    75%{
+        transform: translateY(1rem);
+    } 
+    100%{
+        transform: translateY(0rem);
+    }
+
 }

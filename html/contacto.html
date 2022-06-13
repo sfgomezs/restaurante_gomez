@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
@@ -20,7 +22,7 @@
                 </picture>
                 <h1>Marisol</h1>
             </div>
-            <ul class="menu">
+            <ul class="menu animate__animated animate__flipInX">
                 <li class="menu__item"><a href="../index.html" class="menu__link">Inicio</a></li>
                 <li class="menu__item"><a href="./pedidos.html" class="menu__link">Pedidos</a></li>
                 <li class="menu__item"><a href="./nosotros.html" class="menu__link">Nosotros</a></li>
@@ -28,7 +30,7 @@
                 <li class="menu__item menu__item--active"><a href="./contacto.html" class="menu__link">Contacto</a></li>
             </ul>
             <div class="barra">
-                <img src="../img/barra.png" alt="">
+                <img src="../img/barra.png" alt="menu desplegable">
             </div>
             </div>           
         </nav>
@@ -39,9 +41,9 @@
                 <h2>Datos de contacto</h2>
             </div>
             <div class="contacto__datos">
-                <img class="contacto__img" src="../img/wapp.png" alt="whatsapp"><!--imagen wa pendiente-->
+                <img class="contacto__img" src="../img/wapp.png" alt="icono de whatsapp"><!--imagen wa pendiente-->
                 <h3>+56 9540958935</h3>
-                <img class="contacto__img" src="../img/mail.png" alt="mail"><!--imagen mail pendiente-->
+                <img class="contacto__img" src="../img/mail.png" alt="icono de mail"><!--imagen mail pendiente-->
                 <h3>correo@correo.cl</h3>
             </div>
         </section>
@@ -65,18 +67,22 @@
             </form>       
         </section>
     </main>
-    <footer>
+    <footer data-aos="zoom-in">
         <section><!--redes sociales--> 
             <h4>síguenos en: </h4> 
-            <div class="redes">
-                <a class="redes__insta" title="instagram" href="https://instagram.com" target="_BLANK"><img src="../img/insta.png" alt="instagram"></a>
-                <a class="redes__face" title="facebook" href="https://facebook.com" target="_BLANK"><img src="../img/face.png" alt="facebook"></a>
-            </div>
+            <ul class="redes">
+                <li class="redes__item"><a class="redes__insta" title="instagram" href="https://instagram.com" target="_BLANK"><img src="../img/insta.png" alt="icono de instagram"></a></li>
+                <li class="redes__item"><a class="redes__face" title="facebook" href="https://facebook.com" target="_BLANK"><img src="../img/face.png" alt="icono de facebook"></a></li>
+            </ul>
             
         </section>
         <section class="copy">
             <h4 class="copy__texto">Marisol © 2022. Todos los derechos reservados</h4>
         </section>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
