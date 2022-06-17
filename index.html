@@ -11,35 +11,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="nav__logo" data-aos="zoom-in">
-                <picture>
-                    <a title="logo" href="./index.html"><img class="nav__img" src="./img/logo.png" alt="logo de restaurante Marisol"></a>
-                </picture>
-                <h1>Marisol</h1>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="nav__logo" data-aos="zoom-in">
+                    <picture>
+                        <a title="logo" href="./index.html"><img class="nav__img" src="./img/logo.png" alt="logo de restaurante Marisol"></a>
+                    </picture>
+                    <h1>Marisol</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav menu animate__animated animate__flipInX">
+                        <li class="menu__item menu__item--active"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
+                        <li class="menu__item"><a class="nav-link menu__link" href="./html/pedidos.html">Pedidos</a></li>
+                        <li class="menu__item"><a class="nav-link menu__link" href="./html/nosotros.html">Nosotros</a></li>
+                        <li class="menu__item"><a class="nav-link menu__link" href="./html/noticias.html">Noticias</a></li>
+                        <li class="menu__item"><a class="nav-link menu__link" href="./html/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
-            <ul class="menu animate__animated animate__flipInX">
-                <li class="menu__item menu__item--active"><a href="./index.html" class="menu__link">Inicio</a></li>
-                <li class="menu__item"><a href="./html/pedidos.html" class="menu__link">Pedidos</a></li>
-                <li class="menu__item"><a href="./html/nosotros.html" class="menu__link">Nosotros</a></li>
-                <li class="menu__item"><a href="./html/noticias.html" class="menu__link">Noticias</a></li>
-                <li class="menu__item"><a href="./html/contacto.html" class="menu__link">Contacto</a></li>
-            </ul>
-            <div class="barra">
-                <img src="./img/barra.png" alt="menu desplegable">
-                <ul class="barra__menu">
-                    <li class="barra__item menu__item--active"><a href="./index.html" class="barra__link">Inicio</a></li>
-                    <li class="barra__item"><a href="./html/pedidos.html" class="barra__link">Pedidos</a></li>
-                    <li class="barra__item"><a href="./html/nosotros.html" class="barra__link">Nosotros</a></li>
-                    <li class="barra__item"><a href="./html/noticias.html" class="barra__link">Noticias</a></li>
-                    <li class="barra__item"><a href="./html/contacto.html" class="barra__link">Contacto</a></li>
-                </ul>
-            </div>
-            </div>           
         </nav>
     </header>
     <main>
@@ -51,13 +48,50 @@
             </p>
         </section>
         <h2 class="galery__title">Galeria</h2>
-        <section class="galery"><!--galeria-->
+       <!--  <section class="galery">
             <img class="galery__img-1" src="./img/arepa_rellena-1.jpg" alt="arepas rellenas">
             <img class="galery__img-2" src="./img/picada-1.jpg" alt="picada de carnes">
             <img class="galery__img-3" src="./img/caldo-1.jpg" alt="plato de ramen">
             <img class="galery__img-4" src="./img/sudado.jpg" alt="bandeja paisa">
             <img class="galery__img-5" src="./img/ajiaco-1.jpg" alt="ajiaco">
+        </section> -->
+        <section class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/arepa_rellena-1.jpg" class="d-block w-100" alt="arepas rellenas">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/picada-1.jpg" class="d-block w-100" alt="picada de carnes">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/caldo-1.jpg" class="d-block w-100" alt="plato de ramen">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/ajiaco-1.jpg" class="d-block w-100" alt="ajiaco">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/sudado.jpg" class="d-block w-100" alt="sudado">       
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
+        
     </main>
     <footer>
         <section><!--redes sociales--> 
@@ -73,6 +107,7 @@
         </section>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script>
         AOS.init();
     </script>

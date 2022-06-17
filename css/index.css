@@ -28,6 +28,7 @@ a{
 
 img{
     width: 100%;
+
 }
 
 /* HEADER */
@@ -35,6 +36,11 @@ img{
  header{
     background-color: #49c6c6; 
     color: #f6eee1;   
+ }
+
+ .navbar{
+    background-color: #49c6c6; 
+    color: #f6eee1; 
  }
 
  header nav .barra{
@@ -47,17 +53,21 @@ img{
  } */
 
  header nav{
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem 1.2rem;
-    gap: 2.5rem;
+    gap: 2.5rem; */
  }
 
  header nav .menu{
      display: flex;
      gap: 1rem;
+     align-items: center;
+     align-content: center;
+     justify-content: center;
+     justify-items: center;
  }
 
  header nav h1{
@@ -85,7 +95,7 @@ header nav .nav__img{
     transform: scale(1.1);
 }
 
-.menu .menu__link{
+.menu__link{
     font-size: 1.2em;
     color:#49c6c6;
     padding: 0px 10px;
@@ -141,48 +151,18 @@ main .galery__title{
     padding: 2rem 1rem 0 1rem;
 }
 
-.galery{
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    /* gap: 1rem; */
-}
-
-.galery__img-1{
-    grid-column: 1/5;
-    grid-row: 1/10;
-}
-
-.galery__img-2{
-    grid-column: 5/10;
-    grid-row: 1/6;
-}
-
-.galery__img-3{
-    grid-column: 10/13;
-    grid-row: 1/7;
-    overflow: hidden;
-}
-
-.galery__img-4{
-    grid-column: 10/13;
-    grid-row: 6 /10;
-}
-
-.galery__img-5{
-    grid-column: 5/10;
-    grid-row: 6/10;
+.container{
+    max-width: 30vw;
 }
 
 /* CONTACTO */
 
 .contacto{
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 3rem;
+    margin-top: 3rem;
+}
+
+.col{
+    text-align: center;
 }
 
 .contacto__datos{
@@ -382,9 +362,9 @@ footer{
 
 @media screen and (max-width: 400px) {
     header nav{
-        display: flex;
+        /* display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: center; */
         /* justify-content: space-between; */
         /* padding: 1rem 1.2rem; */
         /* grid-template-columns: repeat(12, 1fr);
