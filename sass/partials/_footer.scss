@@ -1,0 +1,25 @@
+/* FOOTER */
+
+footer{
+    padding: 0px;
+    text-align: center;
+    margin: 5px 50px;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+
+    .redes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .redes__item{
+            max-width: 3rem;
+            transition: transform .5s;
+        }
+    
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+

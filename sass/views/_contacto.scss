@@ -1,0 +1,27 @@
+/* CONTACTO */
+
+.contacto{
+    margin-top: 3rem;
+
+    .col{
+        text-align: center;
+
+        .contacto__datos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .contacto__img{
+                max-width: 4rem;
+            }
+        }
+
+        .contacto__form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
