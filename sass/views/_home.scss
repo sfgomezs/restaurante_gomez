@@ -2,30 +2,31 @@
 
 main{
     .baner{
-        min-height: 15rem;
+        min-height: 3*($spacing-xxl);
         background-image: url(../img/banner.jpg);
         background-size: cover; 
-        color: #0e3141;
+        color: $color-secundario;
     
         h2{
-            font-size: 2.5rem;
-            padding: 1rem;
+            font-size: $font-l;
+            padding: $spacing-s;
         }
     
         h3{
-            font-size: 2rem;
-            padding: 0 1rem 1rem;
+            font-size: $font-m;
+            padding: 0 $spacing-s $spacing-s;
         }
     
         p{
-            font-size: 1.3rem;
-            padding: 0 1rem 1rem;
+            font-size: $font-s;
+            padding: 0 $spacing-s $spacing-s;
         }
     }
 
     .galery__title{
-        font-size: 2rem;
-        padding: 2rem 1rem 0 1rem;
+        font-size: $font-m;
+        padding: $spacing-m $spacing-s 0 $spacing-s;
+        text-align: map-get($map: $estilo-c, $key: centro);
     }
     
     .container{

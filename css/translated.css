@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600&family=Caveat&family=Satisfy&display=swap");
 /* MISC */
+/* COLOR */
+/* FUENTES */
+/* SPACING */
+/* TRANSFORM */
+/* MAPA */
 /* NORMALIZE */
 * {
   margin: 0;
@@ -26,46 +31,41 @@ a {
 img {
   width: 100%; }
 
+/* MIXIN */
 /* PARTIALS */
 /* HEADER */
-header {
+header, header .navbar {
   background-color: #49c6c6;
   color: #f6eee1; }
-  header .navbar {
-    background-color: #49c6c6;
-    color: #f6eee1; }
-    header .navbar .nav__logo {
-      margin-left: 3rem; }
-    header .navbar .nav__img {
-      max-width: 50px;
-      display: inline-block; }
-    header .navbar h1 {
-      font-family: Caveat;
-      font-size: 4.5em;
-      padding-left: 3 rem;
-      display: inline-block;
-      margin: 0% 2rem; }
-    header .navbar .menu {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-      align-content: center;
-      justify-content: center;
-      justify-items: center; }
-      header .navbar .menu .menu__item {
-        background-color: #f6eee1;
-        width: 7rem;
-        border-radius: 3px;
-        text-align: center;
-        transition: transform .5s; }
-        header .navbar .menu .menu__item .menu__link {
-          font-size: 1.2em;
-          color: #49c6c6;
-          padding: 0px 10px; }
-      header .navbar .menu:hover {
-        transform: scale(1.1); }
-      header .navbar .menu .menu__item--active {
-        border-bottom: 3px solid #6a6464; }
+  header .navbar .nav__logo {
+    margin-left: 3rem; }
+  header .navbar .nav__img {
+    max-width: 5rem;
+    display: inline-block; }
+  header .navbar h1 {
+    font-family: Caveat;
+    font-size: 4.5rem;
+    padding-left: 3rem;
+    display: inline-block;
+    margin: 0 2rem; }
+  header .navbar .menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center; }
+    header .navbar .menu .menu__item {
+      background-color: #f6eee1;
+      width: 7rem;
+      border-radius: 3rem;
+      text-align: center;
+      transition: transform 0.5s; }
+      header .navbar .menu .menu__item .menu__link {
+        font-size: 1.2em;
+        color: #49c6c6;
+        padding: 0 1rem; }
+    header .navbar .menu:hover {
+      transform: scale(1.1); }
+    header .navbar .menu .menu__item--active {
+      border-bottom: 0.3rem solid #6a6464; }
   header .navbar-expand-md .navbar-collapse {
     flex-direction: column-reverse;
     flex-grow: .5; }
@@ -74,18 +74,18 @@ header {
 
 /* FOOTER */
 footer {
-  padding: 0px;
   text-align: center;
-  margin: 5px 50px;
+  margin: 5rem 5rem;
   font-size: 1.5rem;
   padding-top: 2rem; }
   footer .redes {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center; }
     footer .redes .redes__item {
       max-width: 3rem;
-      transition: transform .5s; }
+      transition: transform 0.5s; }
     footer .redes:hover {
       transform: scale(1.2); }
 
@@ -103,12 +103,13 @@ main .baner {
     font-size: 2rem;
     padding: 0 1rem 1rem; }
   main .baner p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 0 1rem 1rem; }
 
 main .galery__title {
   font-size: 2rem;
-  padding: 2rem 1rem 0 1rem; }
+  padding: 2rem 1rem 0 1rem;
+  text-align: center; }
 
 main .container {
   max-width: 50vw; }
@@ -117,11 +118,7 @@ main .container {
 #formulario-pedidos h2 {
   font-size: 2.5rem;
   padding-top: 2rem;
-  text-align: center;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center; }
+  text-align: center; }
 
 #formulario-pedidos .pedidos {
   font-size: 1.5rem;
@@ -135,7 +132,7 @@ main .container {
   gap: 2.5rem; }
   #formulario-pedidos .pedidos .pedidos__input {
     position: absolute;
-    left: 0vw; }
+    left: 0; }
   #formulario-pedidos .pedidos .pedidos__entrada {
     grid-column: 3/6;
     grid-row: 1/3;
@@ -189,7 +186,7 @@ main .container {
       opacity: 0; }
     #formulario-pedidos .pedidos .pedidos__proteina #vacuno {
       width: 26vw;
-      height: 20vw;
+      height: 26vw;
       left: .65vw;
       opacity: 0; }
   #formulario-pedidos .pedidos .pedidos__acom {
@@ -211,7 +208,7 @@ main .container {
       opacity: 0; }
     #formulario-pedidos .pedidos .pedidos__acom #frijol {
       width: 26vw;
-      height: 20vw;
+      height: 26vw;
       left: .65vw;
       opacity: 0; }
   #formulario-pedidos .pedidos .pedidos__com {
@@ -300,19 +297,7 @@ main .container {
       align-items: center;
       justify-content: center; }
 
-@media screen and (max-width: 400px) {
-  header .navbar {
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-    gap: 1rem; }
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-    padding-top: 3rem; } }
-
+/* MEDIA */
 @media screen and (max-width: 823px) {
   main .container {
     max-width: 70vw; }
@@ -320,9 +305,7 @@ main .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-items: center;
     justify-content: center;
-    justify-items: center;
     gap: 2rem; }
     #formulario-pedidos .pedidos .pedidos__entrada #ensalada {
       width: 65vh;
@@ -368,17 +351,13 @@ main .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-items: center;
     justify-content: center;
-    justify-items: center;
     gap: 2rem; }
   .nosotros {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-items: center;
     justify-content: center;
-    justify-items: center;
     gap: 2rem; } }
 
 @media screen and (max-width: 650px) {
@@ -387,7 +366,6 @@ main .container {
   #formulario-pedidos .pedidos .pedidos__entrada #ensalada {
     width: 65vh;
     height: 55vh;
-    /* opacity: 1; */
     left: 4vw; }
   #formulario-pedidos .pedidos .pedidos__entrada #fruta {
     width: 65vh;
@@ -425,3 +403,17 @@ main .container {
     width: 65vh;
     height: 55vh;
     left: 4vw; } }
+
+@media screen and (max-width: 400px) {
+  header .navbar {
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem; }
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 3rem; } }

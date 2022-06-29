@@ -1,20 +1,17 @@
 /* FOOTER */
 
 footer{
-    padding: 0px;
-    text-align: center;
-    margin: 5px 50px;
-    font-size: 1.5rem;
-    padding-top: 2rem;
+    text-align: map-get($map: $estilo-c, $key: centro);
+    margin: ($spacing-s)/2 $spacing-xxl;
+    font-size: $font-s;
+    padding-top: $spacing-m;
 
     .redes{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include display-flex-row;
     
         .redes__item{
-            max-width: 3rem;
-            transition: transform .5s;
+            max-width: $spacing-xl;
+            transition: transform $time-s;
         }
     
         &:hover{
@@ -22,4 +19,3 @@ footer{
         }
     }
 }
-

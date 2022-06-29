@@ -1,27 +1,20 @@
 /* CONTACTO */
 
 .contacto{
-    margin-top: 3rem;
+    margin-top: $spacing-xl;
 
     .col{
-        text-align: center;
+        text-align: map-get($map: $estilo-c, $key: centro);
 
         .contacto__datos{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
+            @include display-flex-col;
             .contacto__img{
-                max-width: 4rem;
+                max-width: ($spacing-xxl)-($spacing-s);
             }
         }
 
         .contacto__form{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include display-flex-col;
         }
     }
 }

@@ -1,49 +1,45 @@
 /* HEADER */
 
 header{
-    background-color: #49c6c6; 
-    color: #f6eee1;  
+    background-color: $color-primario; 
+    color: $color-base;  
     
     .navbar{
-        background-color: #49c6c6; 
-        color: #f6eee1;
+        @extend header;
 
         .nav__logo{
-            margin-left: 3rem;
+            margin-left: $spacing-xl;
          }
 
         .nav__img{
-            max-width: 50px;
-            display: inline-block;
+            max-width: $spacing-xxl;
+            display: map-get($map: $estilo-c, $key: disp);
         }
 
         h1{
             font-family: Caveat;
-            font-size: 4.5em;
-            padding-left: 3 rem;
-            display: inline-block;
-            margin: 0% 2rem;
+            font-size: ($spacing-m)+($spacing-l);
+            padding-left: $spacing-xl;
+            display: map-get($map: $estilo-c, $key: disp);
+            margin: 0 $spacing-m;
         }
 
         .menu{
             display: flex;
-            gap: 1rem;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-            justify-items: center;
+            gap: $spacing-s;
+            align-items: map-get($map: $estilo-c, $key: centro);
 
             .menu__item{
-                background-color: #f6eee1;
-                width: 7rem;
-                border-radius: 3px;
-                text-align: center;
-                transition: transform .5s;
+                background-color: $color-base;
+                width: ($spacing-xxl)+($spacing-m);
+                border-radius: $spacing-xl;
+                text-align: map-get($map: $estilo-c, $key: centro);
+                transition: transform $time-s;
         
                 .menu__link{
                     font-size: 1.2em;
-                    color:#49c6c6;
-                    padding: 0px 10px;
+                    color: $color-primario;
+                    padding: 0 $spacing-s;
                 }
             }
         
@@ -52,7 +48,7 @@ header{
             }
         
             .menu__item--active{
-                border-bottom: 3px solid #6a6464;
+                border-bottom: .3rem solid $color-terciario;
             }
         }
      }
@@ -64,15 +60,7 @@ header{
          }
 
         .navbar-toggler {
-            margin-right: 3rem;
+            margin-right: $spacing-xl;
          }
     }
  }
-
- 
-
- 
-
-  
-
- 
